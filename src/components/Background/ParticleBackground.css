@@ -1,0 +1,53 @@
+/* Container que cobre toda a tela com um gradiente animado */
+.particle-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Fica atrás do conteúdo */
+  /* Gradiente com variações de azul escuro e roxo */
+  background: linear-gradient(135deg, #0d1b2a, #1e1f26, #3b3b98, #6a0572);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  overflow: hidden;
+}
+
+/* Animação do gradiente */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 50%;
+  }
+}
+
+/* Estilo das partículas */
+.particle {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  animation-name: float;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Animação das partículas */
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-20vh) translateX(10vw) scale(0.8);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-40vh) translateX(20vw) scale(0.6);
+    opacity: 0;
+  }
+}

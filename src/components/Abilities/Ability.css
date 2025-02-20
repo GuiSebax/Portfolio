@@ -1,0 +1,95 @@
+.ability {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .ability_container {
+    max-width: 800px;
+  }
+  
+  .ability h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00aaff;
+  }
+  
+  .ability p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .ability_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .ability_list li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .ability_list li:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 50% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 50% 50%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .ability h2 {
+      font-size: 2em;
+    }
+  
+    .ability p {
+      font-size: 1em;
+    }
+  
+    .ability_list li {
+      font-size: 1em;
+      padding: 8px 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ability {
+      padding: 30px 10px;
+    }
+  
+    .ability h2 {
+      font-size: 1.5em;
+    }
+  
+    .ability p {
+      font-size: 0.9em;
+    }
+  
+    .ability_list li {
+      font-size: 0.9em;
+      padding: 6px 10px;
+    }
+  }

@@ -1,0 +1,115 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #0d1b2a, #1e1f26, #3b3b98, #6a0572);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #fff;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #00aaff;
+  }
+  
+  .projects_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1100px;
+  }
+  
+  .project_card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    border: 2px solid transparent;
+  }
+  
+  .project_card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #00aaff;
+  }
+  
+  .card_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project_card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .project_card p {
+    font-size: 1.1em;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 50% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 50% 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .projects h2 {
+      font-size: 2em;
+    }
+  
+    .project_card {
+      padding: 15px;
+    }
+  
+    .project_card h3 {
+      font-size: 1.3em;
+    }
+  
+    .project_card p {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .projects {
+      padding: 30px 10px;
+    }
+  
+    .projects h2 {
+      font-size: 1.5em;
+    }
+  
+    .project_card {
+      padding: 10px;
+    }
+  
+    .project_card h3 {
+      font-size: 1.2em;
+    }
+  
+    .project_card p {
+      font-size: 0.9em;
+    }
+  }
