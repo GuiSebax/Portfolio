@@ -47,6 +47,11 @@
     .about p {
       font-size: 1em;
     }
+    .about {
+      min-height: 80vh;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
   }
   
   @media (max-width: 480px) {

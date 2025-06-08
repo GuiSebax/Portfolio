@@ -149,8 +149,9 @@
     cursor: pointer;
     font-size: 16px;
     z-index: 1000;
+    transition: background-color 0.3s ease;
   }
 
   .scrollTopButton:hover {
-    background-color: #0056b3;
+    background-color: #8524ac;
   }
