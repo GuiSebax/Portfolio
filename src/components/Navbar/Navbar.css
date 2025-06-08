@@ -39,8 +39,7 @@
 
 @media (max-width: 768px) {
     .navbar {
-      padding: 10px 0px;
-      height: auto;
+      display: none;
     }
   
     .navbar_list {
@@ -60,7 +59,7 @@
   
   @media (max-width: 480px) {
     .navbar {
-      padding: 5px 0px;
+      display: none;
     }
   
     .navbar_list-item a {

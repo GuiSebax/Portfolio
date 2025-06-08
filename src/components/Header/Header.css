@@ -82,6 +82,13 @@
       width: 100%;
       height: auto;
     }
+
+    .scrollTopButton {
+      bottom: 15px;
+      right: 15px;
+      padding: 8px 12px;
+      font-size: 14px;
+    }
   }
   
   @media (max-width: 480px) {
@@ -128,4 +135,22 @@
       width: 100%;
       height: auto;
     }
+  }
+
+  .scrollTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6a0572;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000;
+  }
+
+  .scrollTopButton:hover {
+    background-color: #0056b3;
   }
